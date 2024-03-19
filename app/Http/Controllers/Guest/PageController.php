@@ -20,8 +20,7 @@ class PageController extends Controller
     /**
      * returns view of the details of a specific movie
      */
-    public function movie_details($id){
-        $movie = Movie::find($id);        
+    public function movie_details(Movie $movie){     
         return view("movie-details", compact("movie"));
     }
 

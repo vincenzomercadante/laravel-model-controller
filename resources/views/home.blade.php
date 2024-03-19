@@ -15,7 +15,7 @@
         @forelse ($movies as $movie)
             <div class="col">
               {{-- single movie linked to the movie details page --}}
-              <a href="{{route('movie_details', ['id' => $movie->id])}}">
+              <a href="{{route('movie_details', $movie)}}">
                 <div class="card h-100 p-2">
                   {{-- title --}}
                   <h2 class="text-center fs-2 text-success">{{$movie->title}}</h2>
